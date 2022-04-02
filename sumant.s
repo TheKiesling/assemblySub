@@ -6,7 +6,7 @@
 * #    #         #       #                #   #             #      #    #  #    #       #
 * #     #        #       #                #   #             #      #     # #    #       #
 * #      #    ########   ########   #######   ########   #######   #      ##    #########
-*
+* 
 * UNIVERSIDAD DEL VALLE DE GUATEMALA 
 * Organización de computadoras y Assembler
 * Ciclo 1 - 2022
@@ -24,7 +24,6 @@
 * R0: inicio de cadena o mensaje a imprimir.
 * R1: valor numérico resultado de resta.
  -------------------------------------------------------------------------------------- */
- 
  
 /* --------------------------------------- TEXT --------------------------------------- */
 .text
@@ -62,15 +61,14 @@ main:
 	ldmfd sp!, {lr}	/* R13 = SP */
 	bx lr
 
-
 /* --------------------------------------- DATA --------------------------------------- */
 .data
 .align 2
 formato:
 	.asciz "El resultado de la resta es: %d\n"
 valor1:
-	.word 4141592653589
+	.word 41
 valor2:
-	.word 1000000000000
+	.word 10
 resta:
 	.word 0
